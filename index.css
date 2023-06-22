@@ -1,0 +1,297 @@
+@font-face {
+    src: url("./Ubuntu-R.ttf");
+    font-family: ubuntu;
+}
+
+@font-face {
+    src: url("./Ubuntu-B.ttf");
+    font-family: "ubuntu-bold";
+}
+
+@font-face {
+    font-family: octin;
+    src: url("./octin_stencil_rg.otf");
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    min-width: 100vw;
+    max-height: 100vh;
+    max-width: 100vw;
+    height: 100vh;
+    width: 100vw;
+    color: #25467A;
+    font-family: ubuntu;
+    overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+ol {
+    padding-inline-start: 2rem;
+    list-style-type: lower-greek;
+}
+
+li {
+    font-size: 1.6rem;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    /* grid-gap: 0.2rem 0.18rem; */
+    grid-template-columns: 20% repeat(5, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas:
+        "header header header header header header"
+        "side1 null wk1 wk2 wk3 wk4"
+        "side1 mon day1 day8 day15 day22"
+        "side1 tue day2 day9 day16 day23"
+        "side2 wed day3 day10 day17 day24"
+        "side2 thu day4 day11 day18 day25"
+        "side2 fri day5 day12 day19 day26"
+        "side3 sat day6 day13 day20 day27"
+        "side3 sun day7 day14 day21 day28"
+    ;
+}
+
+div:not(:first-child) {
+    padding: 1.5rem;
+    max-height: 100%;
+    /* overflow-y: auto; */
+}
+
+.slo {
+    border-bottom: 1px solid #25467A;
+    border-right: 1px solid #25467A;
+    /* border-top: 1px dotted #25467A; */
+}
+
+.wk1 {
+    border-left: 1px solid #25467A;
+}
+
+.mon {
+    border-top: 1px solid #25467A;
+}
+
+[center] {
+    text-align: center;
+}
+
+.slot {
+    text-align: center;
+    border-bottom: 1px dotted #25467A;
+    border-right: 1px solid #25467A;
+    line-height: 1fr;
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-family: "octin";
+    font-size: 2rem;
+}
+
+h3 {
+    font-family: "octin";
+    font-size: 1.5rem;
+}
+
+.c1 {
+    grid-area: header;
+    font-family: octin;
+    background-color: #25467A;
+    padding: 1%;
+}
+
+.c1 h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    color: #FFF;
+    line-height: 100%;
+}
+
+.c2 {
+    grid-area: side1;
+    border-right: 1.5px solid #25467A;
+    border-bottom: 1.5px solid #25467A;
+}
+
+.c3 {
+    grid-area: side2;
+    border-right: 1.5px solid #25467A;
+    border-bottom: 1.5px solid #25467A;
+}
+
+.c4 {
+    grid-area: side3;
+    border-right: 1.5px solid #25467A;
+    border-bottom: 1.5px solid #25467A;
+}
+
+.c5 {
+    grid-area: wk1;
+}
+
+.c6 {
+    grid-area: wk2;
+}
+
+.c7 {
+    grid-area: wk3;
+}
+
+.c8 {
+    grid-area: wk4;
+}
+
+.c9 {
+    grid-area: mon;
+}
+
+.c10 {
+    grid-area: tue;
+}
+
+.c11 {
+    grid-area: wed;
+}
+
+.c12 {
+    grid-area: thu;
+}
+
+.c13 {
+    grid-area: fri;
+}
+
+.c14 {
+    grid-area: sat;
+}
+
+.c15 {
+    grid-area: sun;
+}
+
+.c16 {
+    grid-area: day1;
+}
+
+.c17 {
+    grid-area: day2;
+}
+
+.c18 {
+    grid-area: day3;
+}
+
+.c19 {
+    grid-area: day4;
+}
+
+.c20 {
+    grid-area: day5;
+}
+
+.c21 {
+    grid-area: day6;
+}
+
+.c22 {
+    grid-area: day7;
+}
+
+.c23 {
+    grid-area: day8;
+}
+
+.c24 {
+    grid-area: day9;
+}
+
+.c25 {
+    grid-area: day10;
+}
+
+.c26 {
+    grid-area: day11;
+}
+
+.c27 {
+    grid-area: day12;
+}
+
+.c28 {
+    grid-area: day13;
+}
+
+.c29 {
+    grid-area: day14;
+}
+
+.c30 {
+    grid-area: day15;
+}
+
+.c31 {
+    grid-area: day16;
+}
+
+.c32 {
+    grid-area: day17;
+}
+
+.c33 {
+    grid-area: day18;
+}
+
+.c34 {
+    grid-area: day19;
+}
+
+.c35 {
+    grid-area: day20;
+}
+
+.c36 {
+    grid-area: day21;
+}
+
+.c37 {
+    grid-area: day22;
+}
+
+.c38 {
+    grid-area: day23;
+}
+
+.c39 {
+    grid-area: day24;
+}
+
+.c40 {
+    grid-area: day25;
+}
+
+.c41 {
+    grid-area: day26;
+}
+
+.c42 {
+    grid-area: day27;
+}
+
+.c43 {
+    grid-area: day28;
+}
