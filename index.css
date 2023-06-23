@@ -26,9 +26,14 @@ body {
     max-width: 100vw;
     height: 100vh;
     width: 100vw;
-    color: #25467A;
-    font-family: ubuntu;
+    color: #FFF;
+    font-family: ubuntu-bold;
     overflow: hidden;
+    background-image: url("bg.jpg");
+    background-size: contain;
+    background-position: right;
+    background-blend-mode: darken;
+    background-color: #000000BB;
 }
 
 *,
@@ -54,15 +59,15 @@ li {
     grid-template-columns: 20% repeat(5, 1fr);
     grid-template-rows: repeat(9, 1fr);
     grid-template-areas:
-        "header header header header header header"
+        "side1 header header header header header"
         "side1 null wk1 wk2 wk3 wk4"
         "side1 mon day1 day8 day15 day22"
         "side1 tue day2 day9 day16 day23"
         "side2 wed day3 day10 day17 day24"
         "side2 thu day4 day11 day18 day25"
         "side2 fri day5 day12 day19 day26"
-        "side3 sat day6 day13 day20 day27"
-        "side3 sun day7 day14 day21 day28"
+        "side2 sat day6 day13 day20 day27"
+        "side2 sun day7 day14 day21 day28"
     ;
 }
 
@@ -73,17 +78,10 @@ div:not(:first-child) {
 }
 
 .slo {
-    border-bottom: 1px solid #25467A;
-    border-right: 1px solid #25467A;
+    border-bottom: 0.5px solid #FFF;
+    border-right: 0.5px solid #FFF;
+    background-color: #00000088;
     /* border-top: 1px dotted #25467A; */
-}
-
-.wk1 {
-    border-left: 1px solid #25467A;
-}
-
-.mon {
-    border-top: 1px solid #25467A;
 }
 
 [center] {
@@ -92,8 +90,8 @@ div:not(:first-child) {
 
 .slot {
     text-align: center;
-    border-bottom: 1px dotted #25467A;
-    border-right: 1px solid #25467A;
+    /* border-bottom: 1px dotted #25467A;
+    border-right: 1px solid #25467A; */
     line-height: 1fr;
     font-size: 1.5rem;
 }
@@ -111,8 +109,9 @@ h3 {
 .c1 {
     grid-area: header;
     font-family: octin;
-    background-color: #25467A;
+    /* border-bottom: 1px solid #FFF; */
     padding: 1%;
+    background-color: black;
 }
 
 .c1 h1 {
@@ -124,20 +123,21 @@ h3 {
 
 .c2 {
     grid-area: side1;
-    border-right: 1.5px solid #25467A;
-    border-bottom: 1.5px solid #25467A;
+    border-right: 1.5px solid #FFF;
+    border-bottom: 1.5px solid #FFF;
+    background-color: black;
 }
 
 .c3 {
     grid-area: side2;
-    border-right: 1.5px solid #25467A;
-    border-bottom: 1.5px solid #25467A;
+    border-right: 1.5px solid #FFF;
+    border-bottom: transparent;
+    background-color: black;
 }
 
 .c4 {
     grid-area: side3;
-    border-right: 1.5px solid #25467A;
-    border-bottom: 1.5px solid #25467A;
+    border-right: 1.5px solid #FFF;
 }
 
 .c5 {
@@ -154,6 +154,7 @@ h3 {
 
 .c8 {
     grid-area: wk4;
+    border-right: transparent;
 }
 
 .c9 {
@@ -182,6 +183,7 @@ h3 {
 
 .c15 {
     grid-area: sun;
+    border-bottom: transparent;
 }
 
 .c16 {
@@ -294,4 +296,10 @@ h3 {
 
 .c43 {
     grid-area: day28;
+}
+
+.c44 {
+    grid-area: null;
+    border-bottom: 1px solid #FFF;
+    border-right: 1px solid #FFF;
 }
